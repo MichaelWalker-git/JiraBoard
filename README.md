@@ -1,2 +1,0 @@
-# JiraBoard
-Created with CodeSandbox
