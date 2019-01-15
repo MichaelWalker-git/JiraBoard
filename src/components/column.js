@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 
 const Column = props => {
-  return <div>Story Title</div>;
+  return (<div>Story Title</div>);
 };
 
 export default Column;

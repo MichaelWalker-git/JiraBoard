@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+require("board.css");
+
 const Board = props => {
   const columns = {
     notStarted: [],
@@ -29,7 +31,7 @@ const Board = props => {
           props.onDrop(e, "notStarted");
         }}
       >
-        <div>Not Done</div>
+        <div className="headerTitle">Not Done</div>
         <div>{columns.notStarted.map(story => story)}</div>
       </div>
       <div
@@ -39,7 +41,7 @@ const Board = props => {
           props.onDrop(e, "inProgress");
         }}
       >
-        <div>In Progress</div>
+        <div className="headerTitle">In Progress</div>
         <div>{columns.inProgress.map(story => story)}</div>
       </div>
       <div
@@ -49,7 +51,7 @@ const Board = props => {
           props.onDrop(e, "done");
         }}
       >
-        <div>Done</div>
+        <div className="headerTitle">Done</div>
         <div>{columns.done.map(story => story)}</div>
       </div>
     </div>
